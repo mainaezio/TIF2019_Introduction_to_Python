@@ -1,0 +1,13 @@
+*~
+.*~
+*.bck
+.*.bck
+/Notes/*
+/archive.ics.uci.edu/*
+/Humour/.*
+/ShellPrograms/__pycache__/*
+/ipynb/.*
+/html/index01.html
+/ipynb/__pycache__/*
+/html/EserciziLaboratori/*sol*
+/html/Messaggi/*
