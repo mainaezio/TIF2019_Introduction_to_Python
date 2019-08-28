@@ -9,7 +9,8 @@
 /Humour/.*
 /ShellPrograms/__pycache__/*
 /ipynb/.*
-/html/index01.html
+/ipynb/*sol*
 /ipynb/__pycache__/*
+/html/index01.html
 /html/EserciziLaboratori/*sol*
 /html/Messaggi/*
