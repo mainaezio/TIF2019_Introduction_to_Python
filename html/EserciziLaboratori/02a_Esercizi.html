@@ -13161,6 +13161,103 @@ Fate scrivere il risultato in modo chiaro e descrittivo.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>- Scrivete una funzione che prenda come input due numeri n1 e n2 e restituisca la radice quadrata del loro prodotto.</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<span class="k">def</span> <span class="nf">my_f</span><span class="p">(</span><span class="n">n1</span><span class="p">,</span><span class="n">n2</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n1</span><span class="o">*</span><span class="n">n2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Test della funzione:</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_f</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mf">3.</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[2]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>3.0</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_f</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span><span class="mf">3.9e+34</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.0</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Esercizi:-Primi-passi">Esercizi: Primi passi<a class="anchor-link" href="#Esercizi:-Primi-passi">&#182;</a></h2>
 </div>
 </div>
@@ -13168,7 +13265,7 @@ Fate scrivere il risultato in modo chiaro e descrittivo.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>1 - Date le coordinate di un punto del piano, px e py, calcolate la sua distanza dall'origine. Verificate la vostra soluzione per i punti (0,3), (1,2), (3,4).</strong></p>
+<p><strong>1 - Scrivete una funzione che prenda come input le coordinate di un punto del piano, px e py, e restituisca la sua distanza dall'origine. Verificate la vostra soluzione per i punti (0,3), (1,2), (3,4).</strong></p>
 
 </div>
 </div>
@@ -13189,7 +13286,7 @@ Fate scrivere il risultato in modo chiaro e descrittivo.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>2 - L'aliquota IVA è il 22%. Dato il prezzo di un prodotto in euro (p) calcolate il prezzo prima di applicare l'IVA e l'imposta applicata.</strong></p>
+<p><strong>2 - L'aliquota IVA è il 22%. Scrivete una funzione che prenda come input il prezzo di vendita di un prodotto in euro (p) e restituisca il prezzo prima di applicare l'IVA e l'imposta applicata.</strong></p>
 
 </div>
 </div>
@@ -13210,7 +13307,7 @@ Fate scrivere il risultato in modo chiaro e descrittivo.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>3 - Data la lunghezza (L) di un lato di un triangolo e l'altezza corrispondente (H), calcolate l'area del triangolo. Verificate la risposta.</strong></p>
+<p><strong>3 - Scrivete una funzione che prenda come input la lunghezza (L) di un lato di un triangolo e l'altezza corrispondente (H), e restituisca l'area del triangolo. Verificate la risposta.</strong></p>
 
 </div>
 </div>
@@ -13231,7 +13328,7 @@ Fate scrivere il risultato in modo chiaro e descrittivo.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>4 - Calcolate l'area di un triangolo usando la formula di Erone (Cercatela su Google!). Verificate la risposta.</strong></p>
+<p><strong>4 - Scrivete una funzione che prenda come input le lunghezze dei tre lati di un triangolo e restituisca l'area usando la formula di Erone (Cercatela su Google!). Verificate la risposta.</strong></p>
 
 </div>
 </div>
@@ -13273,7 +13370,7 @@ Fate scrivere il risultato in modo chiaro e descrittivo.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>6 - Calcolate la superficie e il volume di un cilindro. Quali sono gli input necessari?</strong></p>
+<p><strong>6 - Scrivete una funzione che calcoli la superficie e il volume di un cilindro. Quali sono gli input necessari?</strong></p>
 
 </div>
 </div>
@@ -13294,7 +13391,7 @@ Fate scrivere il risultato in modo chiaro e descrittivo.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>7 - Calcolate la lunghezza di un arco di circonferenza.</strong></p>
+<p><strong>7 - Scrivete una funzione prenda come input il raggio R di una circonferenza e un angolo theta. La funzione restituisce la lunghezza dell'arco di circonferenza corrispondente all'input.</strong></p>
 
 </div>
 </div>
@@ -13315,7 +13412,7 @@ Fate scrivere il risultato in modo chiaro e descrittivo.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>8 - Calcolate l'area di un settore circolare.</strong></p>
+<p><strong>8 - Scrivete una funzione che calcoli l'area di un settore circolare.</strong></p>
 
 </div>
 </div>
@@ -13336,7 +13433,7 @@ Fate scrivere il risultato in modo chiaro e descrittivo.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>9 - Calcolate la radice quadrata e l'esponenziale di un numero R.</strong></p>
+<p><strong>9 - Scrivete una funzione che restituisca la radice quadrata e l'esponenziale di un numero R.</strong></p>
 
 </div>
 </div>
@@ -13442,7 +13539,7 @@ Fate scrivere il risultato in modo chiaro e descrittivo.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Calcolate la velocita' di fuga dalla Terra e dalla Luna.</strong></p>
+<p><strong>Scrivete una funzione che calcoli la velocita' di fuga dalla Terra e dalla Luna.</strong></p>
 
 </div>
 </div>
