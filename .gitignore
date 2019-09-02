@@ -4,6 +4,7 @@
 .*.bck
 .nbgrader.log
 .ipynb_checkpoints/*
+/ShellPrograms/.ipynb_checkpoints/*
 /Notes/*
 /archive.ics.uci.edu/*
 /Humour/.*
@@ -14,3 +15,5 @@
 /html/index01.html
 /html/EserciziLaboratori/*sol*
 /html/Messaggi/*
+Untitled.ipynb
+/ShellPrograms/Untitled.ipynb
