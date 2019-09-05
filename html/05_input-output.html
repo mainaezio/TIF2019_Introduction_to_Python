@@ -13281,37 +13281,6 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The answer is&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="s2">&quot;and the string reads&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The answer is 10 and the string reads test text
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13619,7 +13588,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">AU</span> <span class="o">=</span> <span class="mi">149597870700</span>  <span class="c1"># unità astronomica [m]</span>
@@ -13636,13 +13605,46 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[1]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
 <pre>&#39;149597870700.000000&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s2">&quot;</span><span class="si">%e</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">AU</span>       <span class="c1"># la seconda linee della tavola</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;1.495979e+11&#39;</pre>
 </div>
 
 </div>
@@ -13681,6 +13683,16 @@ div#notebook {
 <td style="text-align:left"><code>%d</code></td>
 <td style="text-align:center">integer</td>
 <td style="text-align:right"><code>149597870700</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>%x</code></td>
+<td style="text-align:center">exadecimal</td>
+<td style="text-align:right"><code>22d4ba5a6c</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>%o</code></td>
+<td style="text-align:center">octal</td>
+<td style="text-align:right"><code>2132456455154</code></td>
 </tr>
 <tr>
 <td style="text-align:left"><code>%s</code></td>
@@ -14169,7 +14181,7 @@ di essere meno conciso.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>I dati immagazzinati nel file <code>test.txt</code> sono:</p>
+<p>I dati che vengono immagazzinati nel file <code>test.txt</code> sono:</p>
 
 <pre><code>Writing text to file. This is the first line.
 And the second line.</code></pre>
@@ -14179,7 +14191,7 @@ And the second line.</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 1. Scrivere in un file</span>
@@ -14187,14 +14199,37 @@ And the second line.</code></pre>
 <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Writing text to file. This is the first line.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">+</span>\
                <span class="s2">&quot;And the second line.&quot;</span><span class="p">)</span>
 <span class="n">out_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>                          <span class="c1"># chiude il file</span>
- 
-<span class="c1"># 2. Leggere da un file</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+<span class="c1"># 2. Leggere dal file</span>
 <span class="n">in_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;test.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>           <span class="c1"># Il file viene aperto in lettura.&#39;r&#39; vuol dire Reading</span>
 <span class="n">text</span> <span class="o">=</span> <span class="n">in_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>                     <span class="c1"># legge tutto il file in una variabile &quot;text&quot; di </span>
                                           <span class="c1"># tipo stringa</span>
-<span class="n">in_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>                           <span class="c1"># chide il file</span>
- 
-<span class="c1"># 3. Mostrare i dati</span>
+<span class="n">in_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>                           <span class="c1"># chiude il file</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 3. Mostrare i dati</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
 </pre></div>
 
@@ -14226,7 +14261,7 @@ And the second line.
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Più in dettaglio, il file viene aperto con il comando <code>open</code>. L'oggetto file aperto viene assegnato alla variabile <code>out_file</code>. Il testo viene scritto nel file usando il metodo <code>out_file.write</code>. Si noti che nell'esempio più sopra, al metodo <code>write</code> è stata passata una stringa. Si possono usare, ovviamente, tutte specificazioni di formato discusse in precedenza — si veda <a href="#Formatted-printing">formatted printing</a> e <a href="#New-style-string-formatting">new style formatting</a>. È buona pratica usare <code>close()</code> su tutti i files in cui si è finito di leggere e scrivere. Se un programma Python finisce in modo controllato (cioè non per una caduta di tensione o un improbabile bug del linguaggio o del sistema operativo) tutti i files aperti vengono chiusi non appena i file objects vengono distrutti. Tuttavia, chiuderli esplicitamente non appena possibile è uno stile migliore di programmazione.</p>
-<h3 id="Esempi-di-lettura-da-file">Esempi di lettura da file<a class="anchor-link" href="#Esempi-di-lettura-da-file">&#182;</a></h3><p>Utilizziamo un file chiamato <code>myfile.txt</code> che contiene le tre linee di testo seguenti:</p>
+<h3 id="Esempi-di-lettura-da-file">Esempi di lettura da file<a class="anchor-link" href="#Esempi-di-lettura-da-file">&#182;</a></h3><p>Creiamo un file chiamato <code>myfile.txt</code> che contiene le tre linee di testo seguenti:</p>
 
 <pre><code>This is the first line.
 This is the second line.
@@ -14457,7 +14492,7 @@ This is a third and last line.</code></pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Come-iterare-sulle-lineee-(file-object)">Come iterare sulle lineee (file object)<a class="anchor-link" href="#Come-iterare-sulle-lineee-(file-object)">&#182;</a></h4><p>Esiste una notazione ancora più semplice per leggere un file linea per linea che (i) legge solo una linea alla volta (e quindi è adatto anche a files grandi) e (ii) produce un codice più compatto:</p>
+<h4 id="Come-iterare-sulle-linee-(file-object)">Come iterare sulle linee (file object)<a class="anchor-link" href="#Come-iterare-sulle-linee-(file-object)">&#182;</a></h4><p>Esiste una notazione ancora più semplice per leggere un file linea per linea che (1) legge solo una linea alla volta (e quindi è adatto anche a files grandi) e (2) produce un codice più compatto:</p>
 
 </div>
 </div>
@@ -14501,7 +14536,149 @@ This is a third and last line.</code></pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In questo caso, il "file handle" <code>f</code> agisce come un iteratore e restituisce la linea seguente a ogni iterazione del  for-loop fino alla fine del file is reached (quando il for-loop finisce).</p>
+<p>In questo caso, il "file handle" <code>f</code> agisce come un iteratore e restituisce la linea seguente a ogni iterazione del  for-loop fino alla fine del file (quando il for-loop finisce).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Come-importare-dentro-degli-array-i-dati-contenuti-in-un-file-di-testo">Come importare dentro degli array i dati contenuti in un file di testo<a class="anchor-link" href="#Come-importare-dentro-degli-array-i-dati-contenuti-in-un-file-di-testo">&#182;</a></h3><p>Usiamo la funzione <code>loadtxt</code> del modulo Numpy.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">dataPt</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">error</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span> <span class="s2">&quot;../ShellPrograms/CadutaLiberaDati.txt&quot;</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">5</span> <span class="p">,</span> <span class="n">unpack</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Il parametro <code>skiprows=5</code> dice a <code>loadtxt</code> di ignorare le prime cinque righe che costituiscono l'<code>header</code> del file. Il parametro <code>unpack=True</code> dice di estrarre i dati dalle linee in modo che possano essere caricati nell'ntupla di array a primo membro. Il comando assume che i dati siano separati da uno o più spazi.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">height</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[502.1  497.9  490.33 479.05 461.22 439.28 411.13 379.04 341.98 302.84
+ 252.72 204.29 147.57  85.52  19.62]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Se i dati sono contenuti in un Comma-Separated Values file (CSV), una alternativa molto comune, è sufficiente specificare il separatore con la keyword <code>delimiter</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dataPt</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">error</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="s2">&quot;../ShellPrograms/CadutaLiberaDati.csv&quot;</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">5</span> <span class="p">,</span> <span class="n">unpack</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Come-esportare-degli-array-in-un-file-di-testo">Come esportare degli array in un file di testo<a class="anchor-link" href="#Come-esportare-degli-array-in-un-file-di-testo">&#182;</a></h3><p>Esempio usando gli array precedenti:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">info</span> <span class="o">=</span> <span class="s2">&quot;Misure esperimento Caduta Libera</span><span class="se">\n</span><span class="s2">&quot;</span>
+<span class="n">info</span> <span class="o">+=</span><span class="s2">&quot;Data: 13 Dicembre 2019</span><span class="se">\n</span><span class="s2">&quot;</span>
+<span class="n">info</span> <span class="o">+=</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+<span class="n">info</span> <span class="o">+=</span><span class="s2">&quot;       Punto    Tempo(sec)   Altezza(m)   Incertezza(m)</span><span class="se">\n</span><span class="s2">&quot;</span>
+
+<span class="n">np</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="s1">&#39;../ShellPrograms/CLD.txt&#39;</span><span class="p">,</span>
+           <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">dataPt</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">error</span><span class="p">)),</span>
+           <span class="n">header</span><span class="o">=</span><span class="n">info</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">%12.1f</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Se si preferisce un file CSV:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="s1">&#39;../ShellPrograms/CLD.csv&#39;</span><span class="p">,</span>
+           <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">dataPt</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">error</span><span class="p">)),</span>
+           <span class="n">header</span><span class="o">=</span><span class="n">info</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">%12.1f</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h5 id="Informazioni-ulteriori">Informazioni ulteriori<a class="anchor-link" href="#Informazioni-ulteriori">&#182;</a></h5><p><a href="http://docs.python.org/tutorial/inputoutput.html#methods-of-file-objects">Methods of File objects, Tutorial, Section 7.2.1</a></p>
 
 </div>
