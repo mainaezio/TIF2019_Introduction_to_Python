@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>10b_Laboratorio</title>
+<title>07b_Laboratorio</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13116,14 +13116,129 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Programmare-in-Python">Programmare in Python<a class="anchor-link" href="#Programmare-in-Python">&#182;</a></h1><h2 id="Laboratorio:-Statistica">Laboratorio: Statistica<a class="anchor-link" href="#Laboratorio:-Statistica">&#182;</a></h2>
+<h1 id="Programmare-in-Python">Programmare in Python<a class="anchor-link" href="#Programmare-in-Python">&#182;</a></h1><h2 id="Laboratorio:-Calcolo-Simbolico">Laboratorio: Calcolo Simbolico<a class="anchor-link" href="#Laboratorio:-Calcolo-Simbolico">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>1 - Importate il file dati "<code>../Data/sample_2.txt</code>" usando <code>np.loadtxt()</code>. Usate <code>np.histogram()</code> per creare un histogram array. La funzione restituisce sia il conteggio che l'array dei bordi dei bin. Fate il grafico ed eventualmente modificate il numeri di bin per avere una migliore rappresentazione. Infine ciclate sui bin e stampate il centro e il conteggio di ciascun bin. Valutate la media e la deviazione standard dei dati. Fate il plot dell'istogramma.</strong></p>
+<p><strong>1 - Derivate l'espressione della retta tangente a:
+$$ f(x) = \frac{x^2+6x-1}{4x^2-x+3}$$
+nel punto $x = 1$. Suggerimento: $y(x) = a\, (x-1) + b$.</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>2 - Il teorema fondamentale dell'analisi afferma che l'integrazione e la derivazioni sono una l'operazione inversa dell'altra:</strong></p>
+$$\left( \frac{d}{dx} \circ \int dx \right) = \frac{d}{dx} \int_a^x f(y)\, dy = f(x)$$$$\left( \int dx  \circ \frac{d}{dx} \right) =\int_a^x \frac{df(y)}{dy}\, dy = f(x) + C$$<p><strong>Verificare il teorema per le funzioni $f_1 = x^3$ e $f_2 = \cos(x)$.</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>3 - Calcolate la derivata prima e la derivata seconda di:</strong>
+$$ f(x) = \frac{x^2+6x-1}{4x^2-x+3}$$
+<strong>Quali sono i punti in cui la funzione $f$ non è definita?</strong><br>
+<strong>Trovate eventuali massimi e minimi.</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>4 - Create l'espressione:</strong>
+$$f = x e^{-x} + x (1-x)$$
+<strong>Valutatela per:</strong>
+$x = 0, 0.1, 0.2, 0.4, 0.8$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>5 - Fattorizzate il polinomio $x^{4} - 6 x^{3} + x^{2} + 24 x + 16$. Poi trovate i suoi zeri.</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>6 - Sviluppate in serie fino al terzo ordine $f = x e^{-x} + x (1-x)$ in $x = -0.5$.
+Valutate la differenza assoluta e percentuale fra la funzione $f$ e lo sviluppo in serie per $x = -0.7,-0.6,-0.5,-0.4,-0.3$.</strong></p>
 
 </div>
 </div>
