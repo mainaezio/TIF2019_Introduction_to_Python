@@ -13316,7 +13316,18 @@ Integrators of ODE systems
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Alcuni esempi che mostrano come usare gli algoritmi forniti da <code>scipy</code>.</p>
-<h2 id="Integrazione-numerica">Integrazione numerica<a class="anchor-link" href="#Integrazione-numerica">&#182;</a></h2><p>Scientific Python fornisce diverse routines di integrazione. Uno strumento di uso generale per calcolare 
+<h2 id="Integrazione-numerica">Integrazione numerica<a class="anchor-link" href="#Integrazione-numerica">&#182;</a></h2><p><img src="../Images/integral_comic_strip.png" width="900" align="left"/>
+(Svein Linge, Hans Petter Langtangen - Programming for Computations)<br></p>
+<p><p><br>&lt;\p&gt;</p>
+<p><p> &lt;\p&gt;</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Scientific Python fornisce diverse routines di integrazione. Uno strumento di uso generale per calcolare 
 integrali <em>I</em> of the kind</p>
 $$I=\int_a^b f(x) \mathrm{d} x$$<p>è la function <code>quad()</code> del modulo <code>scipy.integrate</code>.</p>
 <p>Prende in input la funzione <em>f(x)</em> da integrare (l'“integrando”) e gli estremi inferiore e superiore <em>a</em> and <em>b</em>. 
@@ -13404,7 +13415,18 @@ _0^1\cos(2\pi x) dx$.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Risolvere--equazioni--differenziali-ordinarie">Risolvere  equazioni  differenziali ordinarie<a class="anchor-link" href="#Risolvere--equazioni--differenziali-ordinarie">&#182;</a></h2><p>Per risolvere  equazioni  differenziali ordinarie del tipo
+<h2 id="Risolvere--equazioni--differenziali-ordinarie">Risolvere  equazioni  differenziali ordinarie<a class="anchor-link" href="#Risolvere--equazioni--differenziali-ordinarie">&#182;</a></h2><p><img src="../Images/FE_comic_strip.png" width="900" align="left"/>
+(Svein Linge, Hans Petter Langtangen - Programming for Computations)<br></p>
+<p><p><br>&lt;\p&gt;</p>
+<p><p> &lt;\p&gt;</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Per risolvere  equazioni  differenziali ordinarie del tipo
 $$\frac{\mathrm{d}y}{\mathrm{d}t}(t) = f(y,t)$$</p>
 <p>con condizione iniziale $y(t_0)=y_0$, si può usare la  funzione <code>odeint</code> di <code>scipy</code>. Ecco un esempio (<code>useodeint.py</code>) per determinare</p>
 $$y(t) \quad \mathrm{for}\quad t\in[0,2]$$<p>data l'equazione  differenziale:
@@ -13705,6 +13727,10 @@ $$\frac{\mathrm{d}y}{\mathrm{d}t} =  -\exp(-t)(10\sin(10t)+\cos(10t))$$
 $$f(x)=0$$
 si chiama <em>ricerca delle radici</em>. Si noti che un problema del tipo $g(x)=h(x)$ può essere riformulato come $f(x)=g(x)−h(x)=0$.</p>
 <p>Il modulo <code>optimize</code> di <code>scipy</code> fornisce diversi strumenti per la ricerca delle radici.</p>
+<p><img src="../Images/comic_root.png" width="900" align="left"/>
+(Svein Linge, Hans Petter Langtangen - Programming for Computations)<br></p>
+<p><p><br>&lt;\p&gt;</p>
+<p><p> &lt;\p&gt;</p>
 <h3 id="Ricerca-delle-radici-usando-il-metodo-della-bisezione">Ricerca delle radici usando il metodo della bisezione<a class="anchor-link" href="#Ricerca-delle-radici-usando-il-metodo-della-bisezione">&#182;</a></h3><p>L'algoritmo <code>bisect</code> è (i) robusto e (ii) concettualmente molto semplice (ma lento).</p>
 <p>Supponiamo di dover calcolare le radici di $f(x)= x^3 − 2 x^2$. Questa funzione ha una radice (doppia) in $x = 0$ e un'altra fra $x = 1.5$ (dove $f(1.5) = − 1.125$) e $x = 3$ (dove $f(3) = 9$). È facile vedere che questa altra radice si trova in $x = 2$. Ecco il programma che determina la radice numericamente:</p>
 
