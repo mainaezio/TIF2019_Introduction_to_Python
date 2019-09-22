@@ -20,5 +20,5 @@ if __name__ == "__main__":
     #a little demo of how the functions in this module can be used:
     x1 = np.array([0, 1, 2])
     print("The norm of " + str(x1) + " is " + str(norm(x1)) + ".")
-    print("The unitvector in direction of " + str(x1) + " is " \
+    print("The unitvector in the direction of " + str(x1) + " is " \
         + str(unitvector(x1)) + ".")
