@@ -13268,7 +13268,7 @@ div#notebook {
 <li><p>Think Python, <a href="http://www.greenteapress.com/thinkpython/html/book003.html">Sec 2.1</a></p>
 </li>
 </ul>
-<p>I tipi numerici built-in sono i numeri interi (integers, int), reali (floating point, float. <a href="#Floating-Point-numbers">floating point numbers</a>) e complessi (<a href="#Complex-numbers">complex numbers</a>).</p>
+<p>I tipi numerici built-in sono i numeri interi (integers, int), reali (floating point, float) e complessi.</p>
 
 </div>
 </div>
@@ -14701,10 +14701,7 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Liste">Liste<a class="anchor-link" href="#Liste">&#182;</a></h3><h5 id="Informationi-ulteriori">Informationi ulteriori<a class="anchor-link" href="#Informationi-ulteriori">&#182;</a></h5><ul>
-<li>Introduzione alle Liste, <a href="http://docs.python.org/tutorial/introduction.html#lists">Python tutorial, section 3.1.4</a></li>
-</ul>
-<p>Una liste è una sequenza di oggetti. Gli  oggetti possono essere di qulsiasi tipo, per esempi numeri interi:</p>
+<h3 id="Liste">Liste<a class="anchor-link" href="#Liste">&#182;</a></h3><p>Una liste è una sequenza mutabile di oggetti. Gli  oggetti possono essere di qulsiasi tipo, per esempi numeri interi:</p>
 
 </div>
 </div>
@@ -14904,7 +14901,7 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In Python una lista è un oggetto. È quindi possibile che una lista contenga delle altre liste perchè una list contiene una sequenza di oggetti:</p>
+<p>In Python una lista è un oggetto. È quindi possibile che una lista contenga delle altre liste perchè una lista contiene una sequenza di oggetti:</p>
 
 </div>
 </div>
@@ -14955,6 +14952,82 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 
 <div class="output_text output_subarea output_execute_result">
 <pre>[3, 4, 5, 34, 35, 100]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si possono modificare gli elementi di una stringa usando una assegnazione:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">a</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[1]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[1, 2]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;pippo&quot;</span><span class="p">,</span><span class="mf">3.14</span><span class="p">,</span><span class="s2">&quot;pluto&quot;</span><span class="p">]</span>
+<span class="n">a</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;pippo&#39;, 3.14, &#39;pluto&#39;]</pre>
 </div>
 
 </div>
@@ -15048,14 +15121,6 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Notate che un metodo può modificare una stringa, anche se è un oggetto immutabile.</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -15293,6 +15358,16 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Perchè usiamo <code>list(range())</code>?</p>
 <p>In Python 3, <code>range()</code> genera i numeri on demand. Quando si usa <code>range()</code> in un for loop, questo è più efficiente, perchè non occupa memoria con una lista di numeri. Passare il comando <code>range()</code> a <code>list()</code> lo forza a generare immediatamente tutti i numeri.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Informationi-ulteriori">Informationi ulteriori<a class="anchor-link" href="#Informationi-ulteriori">&#182;</a></h5><ul>
+<li>Introduzione alle Liste, <a href="http://docs.python.org/tutorial/introduction.html#lists">Python tutorial, section 3.1.4</a></li>
+</ul>
 
 </div>
 </div>
@@ -15841,7 +15916,7 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>L'immutabilità è la differenza principale fra una tuple e una list (che è mutable). Le tuples vengono utilizzate quando non si vuole che il contenuto venga modificato.</p>
+<p>L'immutabilità è la differenza principale fra una tuple e una lista (che è mutable). Le tuples vengono utilizzate quando non si vuole che il contenuto venga modificato.</p>
 <p>Le funzioni Python che ritornano più di un valore, li ritornano in tuples (che è sensato perchè in genere non si vuole che i risultati di una chiamata a una funzione vengano modificati.</p>
 
 </div>
@@ -16704,7 +16779,7 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Dizionari">Dizionari<a class="anchor-link" href="#Dizionari">&#182;</a></h3><p>I dizionari sono anche chiamati “associative arrays” o “hash tables”. I dizionari sono insiemi <em>unordered</em> di <em>key-value pairs</em>.</p>
+<h3 id="Dizionari">Dizionari<a class="anchor-link" href="#Dizionari">&#182;</a></h3><p>I dizionari sono anche chiamati “associative arrays” o “hash tables”. I dizionari sono insiemi <em>unordered</em> di coppie <em>key-value</em>. Le keywords devono essere oggetti immutabili.</p>
 <p>Un dizionario vuoto può essere creato usando parentesi graffe (curly braces):</p>
 
 </div>
