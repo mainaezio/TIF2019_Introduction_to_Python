@@ -13116,15 +13116,15 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Una-calcolatrice-molto-potente">Una calcolatrice molto potente<a class="anchor-link" href="#Una-calcolatrice-molto-potente">&#182;</a></h1><h2 id="Il-prompt-di-Python--e-il-Read-Eval-Print-Loop-(REPL)">Il prompt di Python  e il Read-Eval-Print Loop (REPL)<a class="anchor-link" href="#Il-prompt-di-Python--e-il-Read-Eval-Print-Loop-(REPL)">&#182;</a></h2><p>Python è un linguaggio <em>interpretato</em>. Possiamo raccogliere una serie di comandi in file di testo e salvarlo su disco come un <em>Python program</em>. Convenzionalmente questi file hanno l'estensione“<code>.py</code>”, per esempio <code>hello.py</code>.</p>
-<p>Possiamo anche sottomettere i singoli comandi al prompt di Python. I comandi vengoni immediatamente interpretati es eseguiti dal Python interpreter. Questo è molto utile per lo studente/ programmatore per capire come usare un certo comando (magari prima di inserire il comando in un  programma Python complesso). Il ruolo di Python può essere descritto come Leggere il comando, Eseguirlo, Stampare il risultato ottenuto e ripetere il ciclo(Loop) – in inglese REPL.</p>
+<h1 id="Una-calcolatrice-molto-potente">Una calcolatrice molto potente<a class="anchor-link" href="#Una-calcolatrice-molto-potente">&#182;</a></h1><h2 id="Il-prompt-di-Python--e-il-Read-Eval-Print-Loop-(REPL)">Il prompt di Python  e il Read-Eval-Print Loop (REPL)<a class="anchor-link" href="#Il-prompt-di-Python--e-il-Read-Eval-Print-Loop-(REPL)">&#182;</a></h2><p>Python è un linguaggio <em>interpretato</em>. Possiamo raccogliere una serie di comandi in file di testo e salvarlo su disco come un <em>Python program</em> (Normal Mode). Convenzionalmente questi file hanno l'estensione“<code>.py</code>”, per esempio <code>hello.py</code>.</p>
+<p>Possiamo anche sottomettere i singoli comandi al prompt di Python. I comandi vengoni immediatamente interpretati es eseguiti dal Python interpreter (Interactive Mode). Questo è molto utile per lo studente/ programmatore per capire come usare un certo comando (magari prima di inserire il comando in un  programma Python complesso). Il ruolo di Python può essere descritto come Leggere il comando, Eseguirlo, Stampare il risultato ottenuto e ripetere il ciclo(Loop) – in inglese REPL.</p>
 <p>Python fornisce una semplice interfaccia di comandi che inizia con un prompt; la linea su cui scrivere l'input comincia con <code>&gt;&gt;&gt;</code>:</p>
 
 <pre><code>&gt;&gt;&gt; 2 + 2
 4
 
 </code></pre>
-<p>Noi useremo una interfaccia più potente, il Jupyter Notebook. Blocchi di codice hanno di fronte il prompt <code>In</code>:</p>
+<p>Noi useremo una interfaccia più potente, il Jupyter Notebook. Blocchi di codice hanno di fronte il prompt <code>In[#]</code> oppure `[#]:</p>
 
 </div>
 </div>
@@ -13165,8 +13165,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Per modificare il codice, cliccate nella finestra. Dovrebbe comparire un bordino verde. Per eseguire il codice,
-schiacciate Shift-Enter.</p>
+<p>Per modificare il codice, cliccate nella finestra. Dovrebbe comparire un bordino blu. Per eseguire il codice, schiacciate Shift-Enter.</p>
 
 </div>
 </div>
@@ -13739,6 +13738,19 @@ Funzioni &lt; parentesi &lt; esponenziazione &lt; moltiplicazione, divisione &lt
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">**</span><span class="mi">4</span><span class="o">/</span><span class="mi">3</span>     <span class="c1"># Interpretato come (x**4)/3, non come x**(4/3)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -14486,15 +14498,15 @@ var: 33
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Come-definire-una-funzione">Come definire una funzione<a class="anchor-link" href="#Come-definire-una-funzione">&#182;</a></h2><p>Il format generico della definizione di una funzione è:</p>
-<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="n">argn</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="n">argn</span><span class="p">):</span>        <span class="c1"># Notate i &quot;:&quot; finali</span>
     <span class="sd">&quot;&quot;&quot;Optional docstring.&quot;&quot;&quot;</span>
 
     <span class="c1"># Implementation of the function</span>
 
-    <span class="k">return</span> <span class="n">result</span>  <span class="c1"># optional</span>
+    <span class="k">return</span> <span class="n">result</span>  <span class="c1"># optional                 # Notate l&#39;indentazione</span>
 
 <span class="c1">#this is not part of the function</span>
-<span class="n">some_command</span>
+<span class="n">some_command</span>                                  <span class="c1"># Notate l&#39;assenza di indentazione</span>
 </pre></div>
 <p>Le parentesi dopo il nome della funzione sono necessarie. Se una funzione non ha argomenti si scrive:</p>
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_function2</span><span class="p">():</span>
@@ -14550,7 +14562,7 @@ var: 33
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">my_sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
@@ -14599,7 +14611,8 @@ var: 33
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_sum</span><span class="p">(</span><span class="mf">3.7</span><span class="p">,</span><span class="o">-</span><span class="mf">2.4</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="n">my_sum</span><span class="p">(</span><span class="mf">3.7</span><span class="p">,</span><span class="o">-</span><span class="mf">2.4</span><span class="p">)</span>
+<span class="n">f</span>
 </pre></div>
 
     </div>
