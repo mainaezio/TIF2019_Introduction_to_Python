@@ -13276,7 +13276,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Numeri-interi">Numeri interi<a class="anchor-link" href="#Numeri-interi">&#182;</a></h3><p>Gli interi in Python 3 non sono limitati; Python assegna automaticamente memoria addizionale quanto è necessario quando i numeri diventano grandi. Quindi possiamo fare calcolo con interi molto grandi senza precauzioni particolari.</p>
+<h3 id="Numeri-interi">Numeri interi<a class="anchor-link" href="#Numeri-interi">&#182;</a></h3><p>Una successione di cifre che non contenga il punto di separazione viene interpretato come un numero intero. <strong>I numeri interi sono rappresentati in modo esatto.</strong> Gli interi in Python 3 non sono limitati; Python assegna automaticamente memoria addizionale quanto è necessario quando i numeri diventano grandi. Quindi possiamo fare calcolo con interi molto grandi senza precauzioni particolari.</p>
 
 </div>
 </div>
@@ -13469,7 +13469,82 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Numeri-reali">Numeri reali<a class="anchor-link" href="#Numeri-reali">&#182;</a></h3><p>Una stringa contenente un numero floating point può essere convertita in un numero reale usando <code>float()</code>:</p>
+<h3 id="Numeri-reali">Numeri reali<a class="anchor-link" href="#Numeri-reali">&#182;</a></h3><p>Una successione di cifre che contenga il punto di separazione viene interpretato come un numero reale.
+<strong>I numeri reali sono rappresentati in modo approssimato (10-14 cifre di precisioe).</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mf">0.3</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[12]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.3</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mf">0.1</span><span class="o">*</span><span class="mi">3</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[13]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.30000000000000004</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una stringa contenente un numero floating point può essere convertita in un numero reale usando <code>float()</code>:</p>
 
 </div>
 </div>
@@ -13706,7 +13781,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">imag</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">imag</span>  <span class="c1"># Numero reale</span>
 </pre></div>
 
     </div>
@@ -14113,6 +14188,84 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Avere più delimitatori possibili per una stringa è utile quando un altro delimitatore è presente nella stringa. Esempio: supponiamo di voler assegnare alla variabile mystr la stringa <em>L'ultimo dei Mohicani</em>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mystr</span> <span class="o">=</span> <span class="s1">&#39;L&#39;</span><span class="n">ultimo</span> <span class="n">dei</span> <span class="n">Mohicani</span><span class="s1">&#39;</span>
+<span class="n">mystr</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&#34;&lt;ipython-input-3-6acc05d9b1fe&gt;&#34;</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">1</span>
+<span class="ansi-red-fg">    mystr = &#39;L&#39;ultimo dei Mohicani&#39;</span>
+                    ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mystr</span> <span class="o">=</span> <span class="s2">&quot;L&#39;ultimo dei Mohicani&quot;</span>
+<span class="n">mystr</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[4]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#34;L&#39;ultimo dei Mohicani&#34;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Il tipo di una stringa è <code>str</code> e la stringa vuota è <code>""</code>:</p>
 
 </div>
@@ -14462,7 +14615,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>L'elenco dei metodi disponibili per le stringhe può essere trovata nella documentazione di Python. Al prompt di Python oppure in un notebook, si possono usare le funzioni <code>dir</code> e <code>help</code> per ottenere queste informazioni: <code>dir()</code> fornisca una lista dei metodi, <code>help</code> descrive più dettagliatamente ciascun metodo.</p>
+<p>L'elenco dei metodi disponibili per le stringhe può essere trovata nella documentazione di Python. Al prompt di Python oppure in un notebook, si possono usare le funzioni <code>dir</code> e <code>help</code> per ottenere queste informazioni: <code>dir()</code> fornisce una lista dei metodi, <code>help</code> descrive più dettagliatamente ciascun metodo.</p>
 <p>Un metodo particolarmente utile è <code>split()</code> che converte una stringa in una lista di stringhe:</p>
 
 </div>
@@ -14701,7 +14854,7 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Liste">Liste<a class="anchor-link" href="#Liste">&#182;</a></h3><p>Una liste è una sequenza mutabile di oggetti. Gli  oggetti possono essere di qulsiasi tipo, per esempi numeri interi:</p>
+<h3 id="Liste">Liste<a class="anchor-link" href="#Liste">&#182;</a></h3><p>Una liste è una sequenza mutabile di oggetti. Gli  oggetti possono essere di qualsiasi tipo, per esempio numeri interi:</p>
 
 </div>
 </div>
@@ -15249,7 +15402,8 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Il comando range prende un parametro opzionale per l'inizio della sequenza di interi  (start) e un altro parametro opzionale per il <em>passo</em> (<em>step</em>). Spesso si scrive <code>range([start],stop,[step])</code> dove gli argomenti in parentesi quadrate (square brackets) (cioè start e step) sono opzionali. Alcuni esempi:</p>
+<p>Il comando range prende un parametro opzionale per l'inizio della sequenza di interi  (start) e un altro parametro opzionale per il <em>passo</em> (<em>step</em>). Spesso si scrive <code>range([start],stop,[step])</code> dove gli argomenti in parentesi quadrate (square brackets) (cioè start e step) sono opzionali. 
+Notate che il valore corrispondente a <code>start</code> è il primo elemento presente nella lista, mentre il valore corrispondente a <code>stop</code> è il "primo escluso" e non compare nella lista. Alcuni esempi:</p>
 
 </div>
 </div>
@@ -15569,7 +15723,7 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Possono essere usate per scambiare due oggetti in una sola riga di codice. Per esempio:</p>
+<p>Le ntuple possono essere usate per scambiare due oggetti in una sola riga di codice. Per esempio:</p>
 
 </div>
 </div>
@@ -15917,7 +16071,7 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>L'immutabilità è la differenza principale fra una tuple e una lista (che è mutable). Le tuples vengono utilizzate quando non si vuole che il contenuto venga modificato.</p>
-<p>Le funzioni Python che ritornano più di un valore, li ritornano in tuples (che è sensato perchè in genere non si vuole che i risultati di una chiamata a una funzione vengano modificati.</p>
+<p>Le funzioni Python che ritornano più di un valore, li ritornano in tuples (che è sensato perchè in genere non si vuole che i risultati di una chiamata a una funzione vengano modificati).</p>
 
 </div>
 </div>
@@ -16272,13 +16426,13 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 <p>Notate che <code>a[:]</code> genera una <em>copia</em> di <code>a</code>. Il modo con cui vengono usati gli indici nello slicing può sembrare controintuitivo. Se vi trovate in difficoltà, ricordate questa spiegazione dal <a href="http://docs.python.org/tutorial/introduction.html#strings">Python tutorial (section 3.1.2)</a>:</p>
 <blockquote><p>The best way to remember how slices work is to think of the indices as pointing between characters, with the left edge of the first character numbered 0. Then the right edge of the last character of a string of 5 characters has index 5, for example:</p>
 
-<pre><code> 0   1   2   3   4    &lt;-- use for INDEXING 
--5  -4  -3  -2  -1    &lt;-- use for INDEXING 
+<pre><code>   0   1   2   3   4     &lt;-- use for INDEXING 
+  -5  -4  -3  -2  -1     &lt;-- use for INDEXING 
  +---+---+---+---+---+           from the end
  | H | e | l | l | o |
  +---+---+---+---+---+ 
  0   1   2   3   4   5   &lt;-- use for SLICING
--5  -4  -3  -2  -1       &lt;-- use for SLICING 
+-6  -5  -4  -3  -2  -1   &lt;-- use for SLICING 
                                  from the end
 
 </code></pre>
@@ -16290,6 +16444,40 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;Hello&quot;</span>
+<span class="n">a</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:</span><span class="o">-</span><span class="mi">6</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[10]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;leH&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -16502,6 +16690,14 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Il metodo <code>get(key,default)</code> restituisce il valore corrispondente a una certa <code>key</code> se la key esiste, altrimenti restituisce l'oggetto di <code>default</code>.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
@@ -16557,7 +16753,6 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Il metodo <code>get(key,default)</code> restituisce il valore corrispondente a una certa <code>key</code> se la key esiste, altrimenti restituisce l'oggetto di <code>default</code>.</p>
 <p>Un esempio un po' più complicato:</p>
 
 </div>
@@ -16668,7 +16863,7 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">double_the_values</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
@@ -16684,6 +16879,27 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>In main: s=[0, 1, 2, 3, 10]
+in double_the_values: l = [0, 1, 2, 3, 10]
+in double_the_values: changed l to l = [0, 2, 4, 6, 20]
+In main: s=[0, 2, 4, 6, 20]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -17328,46 +17544,6 @@ Se cambiamo il valore di n cambia anche la posizione in memoria:</p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Esempio-importante:-uguaglianza-fra-numeri-di-tipo-floating-point">Esempio importante: uguaglianza fra numeri di tipo floating point<a class="anchor-link" href="#Esempio-importante:-uguaglianza-fra-numeri-di-tipo-floating-point">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[107]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mf">0.1</span> <span class="o">==</span> <span class="mi">3</span><span class="o">*</span><span class="mf">0.1</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[107]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>False</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
