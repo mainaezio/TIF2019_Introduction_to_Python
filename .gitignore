@@ -4,8 +4,10 @@
 .*.bck
 .nbgrader.log
 .ipynb_checkpoints/*
+Ianno_Isem_19_20.pdf
 /ShellPrograms/.ipynb_checkpoints/*
 /Notes/*
+/Tests/*
 /archive.ics.uci.edu/*
 /Humour/.*
 /ShellPrograms/__pycache__/*
