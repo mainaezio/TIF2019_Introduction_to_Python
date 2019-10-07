@@ -17005,7 +17005,7 @@ all'interno della funzione:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Anche in questo esempio, raddoppiamo il valore (da 42 a 84) all'interno della funzione. Tuttavia, quando colleghiamo l'oggetto 84 al nome python <code>l</code> (nella riga <code>l = l * 2</code>) abbiamo creato un nuovo oggetto (84), e poi leghiamo il nuovo oggetto a <code>l</code>. Nuovamente, In questo processo, si perde la referenza all'oggetto 42 all'interno della funzione. Questo non modifica l'oggetto 42 itself, né la sua referenza <code>l_global</code>.</p>
+<p>Anche in questo esempio, raddoppiamo il valore (da 42 a 84) all'interno della funzione. Tuttavia, quando colleghiamo l'oggetto 84 al nome python <code>l</code> (nella riga <code>l = l * 2</code>) abbiamo creato un nuovo oggetto (84), e poi leghiamo il nuovo oggetto a <code>l</code>. Nuovamente, In questo processo, si perde la referenza all'oggetto 42 all'interno della funzione. Questo non modifica l'oggetto 42 in sè, né la sua referenza <code>l_global</code>.</p>
 <p>In conclusione, il comportamento di Python per quanto riguarda gli argomenti passati a una funzione può sembrare diverso nei vari casi. Tuttavia, si tratta sempre di chiamata per referenza e il comportamento può essere spiegato
 in ogni caso con lo stesso ragionamento.</p>
 
@@ -17318,7 +17318,7 @@ Se cambiamo il valore di n cambia anche la posizione in memoria:</p>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>       
-<span class="n">a</span>              <span class="c1"># cambiare b non cambia a</span>
+<span class="n">a</span>              <span class="c1"># cambiare c non cambia a</span>
 </pre></div>
 
     </div>
