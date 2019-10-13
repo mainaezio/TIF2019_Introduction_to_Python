@@ -16110,6 +16110,15 @@ Notate che il valore corrispondente a <code>start</code> è il primo elemento pr
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Sets">Sets<a class="anchor-link" href="#Sets">&#182;</a></h3><p>Tra le strutture dati built-in di Python ci sono anche i Sets (insiemi). Non li discutiamo per mancanza di tempo.
+Un eccellente tutorial si trova su Real Python: <a href="https://realpython.com/python-sets/">https://realpython.com/python-sets/</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Passare-argomenti-a-una-funzione-in-Python">Passare argomenti a una funzione in Python<a class="anchor-link" href="#Passare-argomenti-a-una-funzione-in-Python">&#182;</a></h2><p>In Python, gli oggetti sono passati per referenza (tipo pointer) all'oggetto. A seconda di come la referenza viene usate nella funzione e del tipo di oggetto che viene referenziato, questo può significare che qualsiasi cambiamento all'oggetto passato, all'interno della funzione, si riflette immediatamente all'esterno.</p>
 <p>Tre esempi per chiarire. Iniziamo passando una lista a una funzione che itera sugli elementi della sequenza raddoppiando il valore di ciascuno:</p>
 
@@ -16258,7 +16267,7 @@ in ogni caso con lo stesso ragionamento.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In Python, i numeri, le ntuple, le stringhe sono "immutabili" cioè non possono essere modificati senza crare una nuova copia dell'oggetto.<br>
+<p>In Python, i numeri, le ntuple, le stringhe sono "immutabili" cioè non possono essere modificati senza creare una nuova copia dell'oggetto.<br>
 Se cambiamo il valore di n cambia anche la posizione in memoria:</p>
 
 </div>
@@ -16409,7 +16418,7 @@ Se cambiamo il valore di n cambia anche la posizione in memoria:</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>La standard library di Python fornisce il modulo <code>copy</code>, che contiene funzioni che possono essere utilizzate per creare copie di oggetti. Avremmo potuto usare <code>import copy; c = copy.deepcopy(a)</code> invece di <code>c = a[:]</code>.</p>
-<h2 id="Uguaglianza-e-identit&#224;">Uguaglianza e identit&#224;<a class="anchor-link" href="#Uguaglianza-e-identit&#224;">&#182;</a></h2><h3 id="Uguaglianza">Uguaglianza<a class="anchor-link" href="#Uguaglianza">&#182;</a></h3><p>Gli operatori <code>&lt;</code>, <code>&gt;</code>, <code>==</code>, <code>&gt;=</code>, <code>&lt;=</code>, e <code>!=</code> confontano il <em>valore</em> di due oggetti. Non è necessario che i due oggetti siano dello stesso tipo. Per esempio:</p>
+<h2 id="Uguaglianza-e-identit&#224;">Uguaglianza e identit&#224;<a class="anchor-link" href="#Uguaglianza-e-identit&#224;">&#182;</a></h2><h3 id="Uguaglianza">Uguaglianza<a class="anchor-link" href="#Uguaglianza">&#182;</a></h3><p>Gli operatori <code>&lt;</code>, <code>&gt;</code>, <code>==</code>, <code>&gt;=</code>, <code>&lt;=</code>, e <code>!=</code> confontano il <em>valore</em> di due oggetti. Restituiscono True oppure False. Non è necessario che i due oggetti siano dello stesso tipo. Per esempio:</p>
 
 </div>
 </div>
