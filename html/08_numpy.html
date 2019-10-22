@@ -13137,7 +13137,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -13702,6 +13702,48 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>I metodi di slicing per le stringhe si possono applicare anche agli array:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
+<span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[4]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([1, 2, 3])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Come estrarre più elementi da un array usando un array di indici</li>
 </ul>
@@ -14016,7 +14058,7 @@ where(...)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -14046,7 +14088,7 @@ where(...)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[20]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -14073,15 +14115,34 @@ where(...)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">uniqs</span><span class="p">,</span> <span class="n">counts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">arr_rand</span><span class="p">,</span> <span class="n">return_counts</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">uniqs</span><span class="p">,</span> <span class="n">counts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="n">return_counts</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Unique items : &quot;</span><span class="p">,</span> <span class="n">uniqs</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Counts       : &quot;</span><span class="p">,</span> <span class="n">counts</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Unique items :  [-1  0  2  4  6  8]
+Counts       :  [5 1 1 1 1 1]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -15117,7 +15178,7 @@ Cross product of x and y:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -15144,13 +15205,13 @@ Cross product of x and y:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[[0.35668173 0.52720857 0.86225619 0.47226828 0.52653583]
- [0.96083957 0.41994088 0.20341922 0.66547224 0.84001457]
- [0.11103979 0.31772672 0.44730065 0.66229109 0.13638896]
- [0.87629873 0.77424197 0.24700547 0.2860982  0.11081757]
- [0.73241355 0.35456265 0.64177143 0.21863006 0.2826139 ]]
-[0.60334689 0.86980889 0.97081017 0.16243644 0.47749326]
-[1.83899149 1.65166757 0.95030608 1.54133751 1.54379914]
+<pre>[[0.4707657  0.27761041 0.69043783 0.16778222 0.04268362]
+ [0.63146952 0.90539237 0.92014132 0.88832111 0.00678028]
+ [0.57239563 0.59588709 0.34770036 0.79726052 0.81532638]
+ [0.27021876 0.89707459 0.85522458 0.69863398 0.86049468]
+ [0.2220573  0.94759855 0.74598816 0.10342809 0.86729687]]
+[0.53192132 0.54903903 0.30480197 0.17039768 0.19668372]
+[0.65026095 1.26615017 1.03382723 1.18522912 1.05397134]
 </pre>
 </div>
 </div>
@@ -15169,14 +15230,35 @@ Cross product of x and y:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy.linalg</span> <span class="k">as</span> <span class="nn">LA</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">LA</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="n">x</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[11]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([0.53192132, 0.54903903, 0.30480197, 0.17039768, 0.19668372])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -15361,7 +15443,7 @@ Cross product of x and y:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">Theta</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -15432,7 +15514,7 @@ Cross product of x and y:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Theta_vec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vectorize</span><span class="p">(</span><span class="n">Theta</span><span class="p">)</span>
@@ -15445,7 +15527,7 @@ Cross product of x and y:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Theta_vec</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]))</span>
@@ -15461,7 +15543,7 @@ Cross product of x and y:
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[55]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -15470,6 +15552,210 @@ Cross product of x and y:
 <pre>array([0, 0, 0, 1, 1, 1, 1])</pre>
 </div>
 
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">Theta_vec</span><span class="p">)</span>
+<span class="n">help</span><span class="p">(</span><span class="n">Theta_vec</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;numpy.vectorize object at 0x1062a0cf8&gt;
+Help on vectorize in module numpy object:
+
+class vectorize(builtins.object)
+ |  vectorize(pyfunc, otypes=None, doc=None, excluded=None, cache=False, signature=None)
+ |  
+ |  vectorize(pyfunc, otypes=None, doc=None, excluded=None, cache=False,
+ |            signature=None)
+ |  
+ |  Generalized function class.
+ |  
+ |  Define a vectorized function which takes a nested sequence of objects or
+ |  numpy arrays as inputs and returns a single numpy array or a tuple of numpy
+ |  arrays. The vectorized function evaluates `pyfunc` over successive tuples
+ |  of the input arrays like the python map function, except it uses the
+ |  broadcasting rules of numpy.
+ |  
+ |  The data type of the output of `vectorized` is determined by calling
+ |  the function with the first element of the input.  This can be avoided
+ |  by specifying the `otypes` argument.
+ |  
+ |  Parameters
+ |  ----------
+ |  pyfunc : callable
+ |      A python function or method.
+ |  otypes : str or list of dtypes, optional
+ |      The output data type. It must be specified as either a string of
+ |      typecode characters or a list of data type specifiers. There should
+ |      be one data type specifier for each output.
+ |  doc : str, optional
+ |      The docstring for the function. If `None`, the docstring will be the
+ |      ``pyfunc.__doc__``.
+ |  excluded : set, optional
+ |      Set of strings or integers representing the positional or keyword
+ |      arguments for which the function will not be vectorized.  These will be
+ |      passed directly to `pyfunc` unmodified.
+ |  
+ |      .. versionadded:: 1.7.0
+ |  
+ |  cache : bool, optional
+ |     If `True`, then cache the first function call that determines the number
+ |     of outputs if `otypes` is not provided.
+ |  
+ |      .. versionadded:: 1.7.0
+ |  
+ |  signature : string, optional
+ |      Generalized universal function signature, e.g., ``(m,n),(n)-&gt;(m)`` for
+ |      vectorized matrix-vector multiplication. If provided, ``pyfunc`` will
+ |      be called with (and expected to return) arrays with shapes given by the
+ |      size of corresponding core dimensions. By default, ``pyfunc`` is
+ |      assumed to take scalars as input and output.
+ |  
+ |      .. versionadded:: 1.12.0
+ |  
+ |  Returns
+ |  -------
+ |  vectorized : callable
+ |      Vectorized function.
+ |  
+ |  Examples
+ |  --------
+ |  &gt;&gt;&gt; def myfunc(a, b):
+ |  ...     &#34;Return a-b if a&gt;b, otherwise return a+b&#34;
+ |  ...     if a &gt; b:
+ |  ...         return a - b
+ |  ...     else:
+ |  ...         return a + b
+ |  
+ |  &gt;&gt;&gt; vfunc = np.vectorize(myfunc)
+ |  &gt;&gt;&gt; vfunc([1, 2, 3, 4], 2)
+ |  array([3, 4, 1, 2])
+ |  
+ |  The docstring is taken from the input function to `vectorize` unless it
+ |  is specified:
+ |  
+ |  &gt;&gt;&gt; vfunc.__doc__
+ |  &#39;Return a-b if a&gt;b, otherwise return a+b&#39;
+ |  &gt;&gt;&gt; vfunc = np.vectorize(myfunc, doc=&#39;Vectorized `myfunc`&#39;)
+ |  &gt;&gt;&gt; vfunc.__doc__
+ |  &#39;Vectorized `myfunc`&#39;
+ |  
+ |  The output type is determined by evaluating the first element of the input,
+ |  unless it is specified:
+ |  
+ |  &gt;&gt;&gt; out = vfunc([1, 2, 3, 4], 2)
+ |  &gt;&gt;&gt; type(out[0])
+ |  &lt;type &#39;numpy.int32&#39;&gt;
+ |  &gt;&gt;&gt; vfunc = np.vectorize(myfunc, otypes=[float])
+ |  &gt;&gt;&gt; out = vfunc([1, 2, 3, 4], 2)
+ |  &gt;&gt;&gt; type(out[0])
+ |  &lt;type &#39;numpy.float64&#39;&gt;
+ |  
+ |  The `excluded` argument can be used to prevent vectorizing over certain
+ |  arguments.  This can be useful for array-like arguments of a fixed length
+ |  such as the coefficients for a polynomial as in `polyval`:
+ |  
+ |  &gt;&gt;&gt; def mypolyval(p, x):
+ |  ...     _p = list(p)
+ |  ...     res = _p.pop(0)
+ |  ...     while _p:
+ |  ...         res = res*x + _p.pop(0)
+ |  ...     return res
+ |  &gt;&gt;&gt; vpolyval = np.vectorize(mypolyval, excluded=[&#39;p&#39;])
+ |  &gt;&gt;&gt; vpolyval(p=[1, 2, 3], x=[0, 1])
+ |  array([3, 6])
+ |  
+ |  Positional arguments may also be excluded by specifying their position:
+ |  
+ |  &gt;&gt;&gt; vpolyval.excluded.add(0)
+ |  &gt;&gt;&gt; vpolyval([1, 2, 3], x=[0, 1])
+ |  array([3, 6])
+ |  
+ |  The `signature` argument allows for vectorizing functions that act on
+ |  non-scalar arrays of fixed length. For example, you can use it for a
+ |  vectorized calculation of Pearson correlation coefficient and its p-value:
+ |  
+ |  &gt;&gt;&gt; import scipy.stats
+ |  &gt;&gt;&gt; pearsonr = np.vectorize(scipy.stats.pearsonr,
+ |  ...                         signature=&#39;(n),(n)-&gt;(),()&#39;)
+ |  &gt;&gt;&gt; pearsonr([[0, 1, 2, 3]], [[1, 2, 3, 4], [4, 3, 2, 1]])
+ |  (array([ 1., -1.]), array([ 0.,  0.]))
+ |  
+ |  Or for a vectorized convolution:
+ |  
+ |  &gt;&gt;&gt; convolve = np.vectorize(np.convolve, signature=&#39;(n),(m)-&gt;(k)&#39;)
+ |  &gt;&gt;&gt; convolve(np.eye(4), [1, 2, 1])
+ |  array([[ 1.,  2.,  1.,  0.,  0.,  0.],
+ |         [ 0.,  1.,  2.,  1.,  0.,  0.],
+ |         [ 0.,  0.,  1.,  2.,  1.,  0.],
+ |         [ 0.,  0.,  0.,  1.,  2.,  1.]])
+ |  
+ |  See Also
+ |  --------
+ |  frompyfunc : Takes an arbitrary Python function and returns a ufunc
+ |  
+ |  Notes
+ |  -----
+ |  The `vectorize` function is provided primarily for convenience, not for
+ |  performance. The implementation is essentially a for loop.
+ |  
+ |  If `otypes` is not specified, then a call to the function with the
+ |  first argument will be used to determine the number of outputs.  The
+ |  results of this call will be cached if `cache` is `True` to prevent
+ |  calling the function twice.  However, to implement the cache, the
+ |  original function must be wrapped which will slow down subsequent
+ |  calls, so only do this if your function is expensive.
+ |  
+ |  The new keyword argument interface and `excluded` argument support
+ |  further degrades performance.
+ |  
+ |  References
+ |  ----------
+ |  .. [1] NumPy Reference, section `Generalized Universal Function API
+ |         &lt;https://docs.scipy.org/doc/numpy/reference/c-api.generalized-ufuncs.html&gt;`_.
+ |  
+ |  Methods defined here:
+ |  
+ |  __call__(self, *args, **kwargs)
+ |      Return arrays with the results of `pyfunc` broadcast (vectorized) over
+ |      `args` and `kwargs` not in `excluded`.
+ |  
+ |  __init__(self, pyfunc, otypes=None, doc=None, excluded=None, cache=False, signature=None)
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |  
+ |  __dict__
+ |      dictionary for instance variables (if defined)
+ |  
+ |  __weakref__
+ |      list of weak references to the object (if defined)
+
+</pre>
+</div>
 </div>
 
 </div>
@@ -15507,7 +15793,7 @@ Cross product of x and y:
 
 <span class="c1"># Il grafico</span>
 <span class="n">xs</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.1</span> <span class="o">*</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">50</span><span class="p">)]</span>
-<span class="n">ys</span> <span class="o">=</span> <span class="p">[</span><span class="n">p</span> <span class="p">(</span> <span class="n">x</span> <span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">xs</span><span class="p">]</span>   <span class="c1"># valuta p(x) per tutti gli x nella lista xs</span>
+<span class="n">ys</span> <span class="o">=</span> <span class="p">[</span><span class="n">p</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">xs</span><span class="p">]</span>   <span class="c1"># valuta p(x) per tutti gli x nella lista xs</span>
 
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
