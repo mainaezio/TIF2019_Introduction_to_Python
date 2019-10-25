@@ -1,11 +1,9 @@
-import math
-
 import numpy as np
 
 
 def norm(x):
     """returns the magnitude of a vector x"""
-    return math.sqrt(sum(x ** 2))
+    return np.sqrt(np.sum(x ** 2))
 
 
 def unitvector(x):
