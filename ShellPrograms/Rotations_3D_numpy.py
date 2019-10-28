@@ -1,4 +1,16 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# ##  NUMERICAL ROTATIONS in 3D with numpy
+
+# In[5]:
+
+
 import numpy as np
+
+
+# In[8]:
+
 
 def Rx(theta,V):
     """
@@ -14,6 +26,9 @@ def Rx(theta,V):
          [0, s, c]]
     )
     return R*V
+
+
+# In[7]:
 
 
 def Ry(theta,V):
@@ -32,6 +47,9 @@ def Ry(theta,V):
     return R*V
 
 
+# In[9]:
+
+
 def Rz(theta,V):
     """
     Rotation of a 3d vector V
@@ -48,7 +66,7 @@ def Rz(theta,V):
     return R*V
 
 
-#print("My name is", __name__)
+# In[10]:
 
 
 if __name__ == "__main__":
@@ -59,5 +77,10 @@ if __name__ == "__main__":
     print("V rotated of pi/2 araund the x-axis: Rx(np.pi/2.,V)\n" + str(V1))
     V2 = Rz(np.pi/4,V)
     print("V rotated of pi/4 araund the z-axis: Rz(np.pi/4.,V)\n" + str(V2))
-    
+
+
+# In[ ]:
+
+
+
 
