@@ -13705,9 +13705,11 @@ And the second line.</code></pre>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 1. Scrivere in un file</span>
-<span class="n">out_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;test.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>          <span class="c1"># Il file viene aperto/creato in scrittura. &#39;w&#39; vuol dire Writing.</span>
+<span class="n">out_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;test.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>          <span class="c1"># Il file viene aperto/creato in scrittura.</span>
+                                          <span class="c1"># &#39;w&#39; vuol dire Writing.</span>
 <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Writing text to file. This is the first line.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">+</span>\
-               <span class="s2">&quot;And the second line</span><span class="se">\n</span><span class="s2">. Third line!!!!!!!&quot;</span><span class="p">)</span>
+               <span class="s2">&quot;And the second line.</span><span class="se">\n</span><span class="s2"> Third line!!!!!!!&quot;</span><span class="p">)</span>
+<span class="c1"># Il singolo carattere &quot;\n&quot; segnala la fine di una riga. Vuol dire &quot;a capo&quot;.</span>
 <span class="n">out_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>                          <span class="c1"># chiude il file</span>
 </pre></div>
 
