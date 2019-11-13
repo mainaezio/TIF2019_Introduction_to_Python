@@ -13122,7 +13122,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="o">*</span>
@@ -13376,17 +13376,44 @@ $\displaystyle a \left(\frac{2 x_{3}}{sq_{3}} + \frac{2 x_{2}}{sq_{2}} + \frac{2
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se si cerca di risolvere direttamente il sistema di due equazioni, la risposta è corretta ma difficilmente comprensibile.</p>
-
+<p>È facile scrivere l'equazione matriciale che determina $a$ e $b$:</p>
+$$
+\begin{bmatrix}
+\sum \frac{1}{\sigma_i} &amp; \sum \frac{x_i}{\sigma_i} \\
+\sum \frac{x_i}{\sigma_i} &amp; \sum \frac{x^2_i}{\sigma_i}
+\end{bmatrix}
+\begin{bmatrix} a \\ b
+\end{bmatrix}
+= 
+\begin{bmatrix} 
+\sum \frac{y_i}{\sigma_i}  \\ \sum \frac{x_i y_i}{\sigma_i} 
+\end{bmatrix}
+$$$$
+\begin{bmatrix}
+Sinv &amp; Sx \\
+Sx &amp; Sxsq
+\end{bmatrix}
+\begin{bmatrix} a \\ b
+\end{bmatrix}
+= 
+\begin{bmatrix} 
+Sy \\ Sxy
+\end{bmatrix}
+$$
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">solve</span><span class="p">((</span><span class="n">Eq</span><span class="p">(</span><span class="n">chi2_prime_a</span><span class="p">),</span><span class="n">Eq</span><span class="p">(</span><span class="n">chi2_prime_b</span><span class="p">)),</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">Sinv</span><span class="p">,</span> <span class="n">Sx</span><span class="p">,</span> <span class="n">Sxsq</span><span class="p">,</span> <span class="n">Sy</span><span class="p">,</span> <span class="n">Sxy</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;a b Sinv Sx Sxsq Sy Sxy&#39;</span><span class="p">)</span>
+
+<span class="n">eq1</span> <span class="o">=</span> <span class="n">Sinv</span><span class="o">*</span><span class="n">a</span> <span class="o">+</span> <span class="n">Sx</span><span class="o">*</span><span class="n">b</span> <span class="o">-</span> <span class="n">Sy</span>
+<span class="n">eq2</span> <span class="o">=</span> <span class="n">Sx</span><span class="o">*</span><span class="n">a</span>  <span class="o">+</span> <span class="n">Sxsq</span><span class="o">*</span><span class="n">b</span> <span class="o">-</span><span class="n">Sxy</span>
+
+<span class="n">solve</span><span class="p">((</span><span class="n">eq1</span><span class="p">,</span><span class="n">eq2</span><span class="p">),</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13399,14 +13426,14 @@ $\displaystyle a \left(\frac{2 x_{3}}{sq_{3}} + \frac{2 x_{2}}{sq_{2}} + \frac{2
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[32]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>{a: (-(sq1*sq2*x3 + sq1*sq3*x2 + sq2*sq3*x1)*(sq1*sq2*x3*y3 + sq1*sq3*x2*y2 + sq2*sq3*x1*y1) + (sq1*sq2*x3**2 + sq1*sq3*x2**2 + sq2*sq3*x1**2)*(sq1*sq2*y3 + sq1*sq3*y2 + sq2*sq3*y1))/((sq1*sq2 + sq1*sq3 + sq2*sq3)*(sq1*sq2*x3**2 + sq1*sq3*x2**2 + sq2*sq3*x1**2) - (sq1*sq2*x3 + sq1*sq3*x2 + sq2*sq3*x1)**2),
- b: ((sq1*sq2 + sq1*sq3 + sq2*sq3)*(sq1*sq2*x3*y3 + sq1*sq3*x2*y2 + sq2*sq3*x1*y1) - (sq1*sq2*x3 + sq1*sq3*x2 + sq2*sq3*x1)*(sq1*sq2*y3 + sq1*sq3*y2 + sq2*sq3*y1))/((sq1*sq2 + sq1*sq3 + sq2*sq3)*(sq1*sq2*x3**2 + sq1*sq3*x2**2 + sq2*sq3*x1**2) - (sq1*sq2*x3 + sq1*sq3*x2 + sq2*sq3*x1)**2)}</pre>
+<pre>{a: (-Sx*Sxy + Sxsq*Sy)/(Sinv*Sxsq - Sx**2),
+ b: (Sinv*Sxy - Sx*Sy)/(Sinv*Sxsq - Sx**2)}</pre>
 </div>
 
 </div>
