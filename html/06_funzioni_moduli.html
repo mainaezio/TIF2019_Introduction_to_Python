@@ -13117,7 +13117,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Funzioni-e-moduli">Funzioni e moduli<a class="anchor-link" href="#Funzioni-e-moduli">&#182;</a></h1><h2 id="Introduzione">Introduzione<a class="anchor-link" href="#Introduzione">&#182;</a></h2><p>Le funzioni ci permettono di raggruppare una sequenza di comandi in un blocco logico. Comunichiamo con una funzione attraverso una interfaccia ben definita, fornendo dei parametri, e ricevendo di ritorno delle informazioni. Generalmente non sappiamo esattamente come una funzione ottiene il valore che ci restituisce, conosciamo solo l'interfaccia.</p>
-<p>Per esempio la funzione <code>math.sqrt</code>: non sappiamo esattamente come calcola la radice quadrata, ma conosciamo l'interfaccia: se passiamo il valore <em>x</em> alla funzione, ci restituisce (un valore approssimato per) $\\sqrt{x}$.</p>
+<p>Per esempio la funzione <code>math.sqrt</code>: non sappiamo esattamente come calcola la radice quadrata, ma conosciamo l'interfaccia: se passiamo il valore <em>x</em> alla funzione, ci restituisce (un valore approssimato per) $\sqrt{x}$.</p>
 <p>Questa astrazione è utile: è una tecnica comune dividere un sistema, un problema in componenti più piccole che funzionano insieme attraverso delle interfacce ben definite che non hanno bisogno di conoscere i dettagli di come ciascuna realizza il suo compito. In fatti, non doversi preoccupare dei dettagli di implementazione ci permette di avere una visione più chiara di un sistema composto di molte parti.</p>
 <p>Le funzioni costituiscono i mattoncini fondamentali all'interno di programmi più vasti e aiutano a tenere sotto controllo la complessità intrinseca dei problemi.</p>
 <p>Possiamo raggruppare diverse funzioni in modulo di Python e creare le nostre librerie di utilità.</p>
@@ -14270,7 +14270,7 @@ power2and3(x)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Di nuovo, questo comndo non introduce il nome <code>math</code> nel namespace. Introduce tuttavia nel namespace <em>tutti i nomi pubblici</em> contenuti nel modulo <code>math</code>. In genere, è una pessima idea:</p>
+<p>Di nuovo, questo comando non introduce il nome <code>math</code> nel namespace. Introduce tuttavia nel namespace <em>tutti i nomi pubblici</em> contenuti nel modulo <code>math</code>. In genere, è una pessima idea:</p>
 <ul>
 <li><p>Un gran numero di nuovi nomi viene scaricato nel namespace attuale.</p>
 </li>
@@ -14288,7 +14288,7 @@ power2and3(x)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Come-creare-moduli">Come creare moduli<a class="anchor-link" href="#Come-creare-moduli">&#182;</a></h3><p>Un modulonon è altro che un file Python. Ecco un esempio di modulo che potete salvare in un file chiamato <code>module1.py</code>:</p>
+<h3 id="Come-creare-moduli">Come creare moduli<a class="anchor-link" href="#Come-creare-moduli">&#182;</a></h3><p>Un modulo non è altro che un file Python. Ecco un esempio di modulo che potete salvare in un file chiamato <code>module1.py</code>:</p>
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">someusefulfunction</span><span class="p">():</span>
     <span class="k">pass</span>
 
@@ -14301,7 +14301,7 @@ power2and3(x)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">pwd</span>
@@ -14317,7 +14317,7 @@ power2and3(x)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[7]:</div>
+    <div class="prompt output_prompt">Out[2]:</div>
 
 
 
@@ -14334,7 +14334,7 @@ power2and3(x)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">cd</span> ../ShellPrograms/
@@ -14365,7 +14365,7 @@ power2and3(x)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">ls</span>
@@ -14402,7 +14402,7 @@ basic1.py
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>python module1.py
@@ -14467,7 +14467,7 @@ basic1.py
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>python prog1.py
@@ -14581,14 +14581,12 @@ file contenente un modulo contenga anche un programma principale all'interno del
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Esempio-3">Esempio 3<a class="anchor-link" href="#Esempio-3">&#182;</a></h3><p>Il prossimo esempio mostra un main program nel modulo <code>vectools.py</code> che dimostra l'uso delle funzioni definite nel file:</p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
-
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 
 
 <span class="k">def</span> <span class="nf">norm</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;returns the magnitude of a vector x&quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">x</span> <span class="o">**</span> <span class="mi">2</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">x</span> <span class="o">**</span> <span class="mi">2</span><span class="p">))</span>
 
 
 <span class="k">def</span> <span class="nf">unitvector</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
