@@ -15569,6 +15569,66 @@ Un eccellente tutorial si trova su Real Python: <a href="https://realpython.com/
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Trovare-attributi-e-metodi-di-un-tipo-di-oggetto">Trovare attributi e metodi di un tipo di oggetto<a class="anchor-link" href="#Trovare-attributi-e-metodi-di-un-tipo-di-oggetto">&#182;</a></h2><p>Il comando <code>dir</code> elenca gli attributi e i metodi relativi ad un certo tipo di oggetto.<BR>
+    Provate:<BR>
+    dir(int), dir(float), dir(complex)<BR>
+    dir(list), dir(dict), dir(tuple), etc.<BR></p>
+<p>Non è possibile utilizzare dir(string) perchè string non è un tipo a parte.
+È però possibile utilizzare <code>dir</code> su un esempio concreto di stringa:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">dir</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Anche per gli altri tipi di oggetti si può usare <code>dir</code> su un esempio esplicito:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">dir</span><span class="p">(</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span><span class="n">j</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">dir</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Passare-argomenti-a-una-funzione-in-Python">Passare argomenti a una funzione in Python<a class="anchor-link" href="#Passare-argomenti-a-una-funzione-in-Python">&#182;</a></h2><p>In Python, gli oggetti sono passati per referenza (tipo pointer) all'oggetto. A seconda di come la referenza viene usate nella funzione e del tipo di oggetto che viene referenziato, questo può significare che qualsiasi cambiamento all'oggetto passato, all'interno della funzione, si riflette immediatamente all'esterno.</p>
 <p>Tre esempi per chiarire. Iniziamo passando una lista a una funzione che itera sugli elementi della sequenza raddoppiando il valore di ciascuno:</p>
 
