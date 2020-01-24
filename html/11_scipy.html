@@ -13327,12 +13327,10 @@ Integrators of ODE systems
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Scientific Python fornisce diverse routines di integrazione. Uno strumento di uso generale per calcolare 
-integrali <em>I</em> of the kind</p>
-$$I=\int_a^b f(x) \mathrm{d} x$$<p>è la function <code>quad()</code> del modulo <code>scipy.integrate</code>.</p>
+<p>Scientific Python fornisce diverse routines di integrazione. Uno strumento di uso generale per calcolare integrali <em>I</em> del tipo</p>
+$$I=\int_a^b f(x) \mathrm{d} x$$<p>è la funzione <code>quad()</code> del modulo <code>scipy.integrate</code>.</p>
 <p>Prende in input la funzione <em>f(x)</em> da integrare (l'“integrando”) e gli estremi inferiore e superiore <em>a</em> and <em>b</em>. 
-Restituisce due valori, (in una tuple): il primo è il risultato dell'integrale mentre il secondo è una stima 
-dell'errore numerico del risultato.</p>
+Restituisce due valori, (in una tuple): il primo è il risultato dell'integrale mentre il secondo è una stima dell'errore numerico del risultato.</p>
 <p>Ecco un esempio:</p>
 
 </div>
@@ -13400,7 +13398,7 @@ _0^1\cos(2\pi x) dx$.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Esercizio:-fare-il-grafico-prima-di-integrare">Esercizio: fare il grafico prima di integrare<a class="anchor-link" href="#Esercizio:-fare-il-grafico-prima-di-integrare">&#182;</a></h3><p>È bene fare il grafico della funzione integranda per controllarne il comportamento prima di cercare di integrarla. Singolarità (per esempio valori di $x$ in cui $f(x)$ tende a più o meno infinito) appure altri comportamenti irregolari, come quello di $f(x)=\sin(\frac{1}{x}$) nell'intorno di $x = 0$, sono estremamente difficili a talvolta semplicemente impossibili da trattare numericmente.</p>
+<h3 id="Esercizio:-fare-il-grafico-prima-di-integrare">Esercizio: fare il grafico prima di integrare<a class="anchor-link" href="#Esercizio:-fare-il-grafico-prima-di-integrare">&#182;</a></h3><p>È bene fare il grafico della funzione integranda per controllarne il comportamento prima di cercare di integrarla. Singolarità (per esempio valori di $x$ in cui $f(x)$ tende a più o meno infinito) appure altri comportamenti irregolari, come quello di $f(x)=\sin(\frac{1}{x}$) nell'intorno di $x = 0$, sono estremamente difficili a talvolta semplicemente impossibili da trattare numericamente.</p>
 <ol>
 <li>Scrivete una funzione chiamata <code>plotquad</code> che prende gli stessi argomenti del comando <code>quad</code>(cioè $f$, $a$ e $b$) e che </li>
 </ol>
@@ -13796,7 +13794,7 @@ The exact error is -2.38419e-07.
 <ul>
 <li><p>Che valore restituisce l'algoritmo di bisezione per la radice <em>x</em>?</p>
 </li>
-<li><p>Calcolate il valore di $\\sqrt{2}$ usando <code>math.sqrt(2)</code> e confrontatelo il risultato precedente. Quanto è grande l'errore assoluto? Come si confronta con <code>xtol</code>?</p>
+<li><p>Calcolate il valore di $\sqrt{2}$ usando <code>math.sqrt(2)</code> e confrontatelo il risultato precedente. Quanto è grande l'errore assoluto? Come si confronta con <code>xtol</code>?</p>
 </li>
 </ul>
 </li>
